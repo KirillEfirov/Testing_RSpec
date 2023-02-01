@@ -28,7 +28,7 @@ describe Calculator do
         
         it "returns the multiplication of more than two numbers" do 
             calculator = Calculator.new
-            expect(calculator.multiply(1, 1, 4)).to eql(0)
+            expect(calculator.multiply(1, 1, 4)).to eql(4)
         end
     end
 
