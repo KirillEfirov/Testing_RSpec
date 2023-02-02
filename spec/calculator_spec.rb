@@ -37,5 +37,10 @@ describe Calculator do
             calculator = Calculator.new
             expect(calculator.divide(5, 5)).to eql(1)
         end
+
+        it "should return ZeroDivisionError" do
+          calculator = Calculator.new
+          expect{calculator.divide(5, 0)}.to raise_error(ZeroDivisionError)
+      end
     end
 end
