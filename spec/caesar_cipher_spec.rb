@@ -31,7 +31,7 @@ describe "#caesar_cipher" do
         expect(encrypted).to eql("")
     end
 
-    it "should return empty 'C'" do
+    it "should return 'C'" do
         encrypted = caesar_cipher " b   ", 1
         
         expect(encrypted).to eql("C")
