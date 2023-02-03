@@ -18,4 +18,16 @@ describe "#caesar_cipher" do
         
         expect(encrypted).to eql("Word")
     end
+
+    it "should return empty string" do
+        encrypted = caesar_cipher "", 0
+        
+        expect(encrypted).to eql("")
+    end
+
+    it "should return empty string" do
+        encrypted = caesar_cipher "    ", 0
+        
+        expect(encrypted).to eql("")
+    end
 end
